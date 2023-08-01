@@ -48,17 +48,12 @@ namespace tourismBigBang.Migrations
                     b.Property<int>("TotalPrice")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("UserInfoId")
-                        .HasColumnType("int");
+                    b.Property<string>("TransactionStatus")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("PackageId");
-
-                    b.HasIndex("UserInfoId");
 
                     b.ToTable("Bookings");
                 });
@@ -74,25 +69,21 @@ namespace tourismBigBang.Migrations
                     b.Property<int>("Daywise")
                         .HasColumnType("int");
 
-                    b.Property<int>("HotelId")
-                        .HasColumnType("int");
+                    b.Property<string>("HotelName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PackageId")
                         .HasColumnType("int");
 
-                    b.Property<int>("SpotId")
-                        .HasColumnType("int");
+                    b.Property<string>("SpotName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("VehicleId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("HotelId");
-
                     b.HasIndex("PackageId");
-
-                    b.HasIndex("SpotId");
 
                     b.HasIndex("VehicleId");
 
@@ -180,7 +171,6 @@ namespace tourismBigBang.Migrations
                         .HasColumnType("int");
 
                     b.Property<int?>("Days")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("ImageName")
@@ -194,7 +184,6 @@ namespace tourismBigBang.Migrations
                         .HasColumnType("int");
 
                     b.Property<int?>("PricePerPerson")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int?>("UserInfoId")
@@ -254,27 +243,6 @@ namespace tourismBigBang.Migrations
                     b.HasIndex("PlaceId");
 
                     b.ToTable("Spots");
-                });
-
-            modelBuilder.Entity("tourismBigBang.Models.Transaction", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BookingId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TransactionStatus")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BookingId");
-
-                    b.ToTable("Transactions");
                 });
 
             modelBuilder.Entity("tourismBigBang.Models.Vehicle", b =>
@@ -349,29 +317,13 @@ namespace tourismBigBang.Migrations
                         .HasForeignKey("PackageId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("tourismBigbang.Models.UserInfo", null)
-                        .WithMany("Bookings")
-                        .HasForeignKey("UserInfoId");
                 });
 
             modelBuilder.Entity("tourismBigBang.Models.DaySchedule", b =>
                 {
-                    b.HasOne("tourismBigBang.Models.Hotel", null)
-                        .WithMany("DaySchedules")
-                        .HasForeignKey("HotelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("tourismBigBang.Models.Package", null)
                         .WithMany("DaySchedules")
                         .HasForeignKey("PackageId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("tourismBigBang.Models.Spot", null)
-                        .WithMany("DaySchedules")
-                        .HasForeignKey("SpotId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -427,24 +379,8 @@ namespace tourismBigBang.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("tourismBigBang.Models.Transaction", b =>
-                {
-                    b.HasOne("tourismBigBang.Models.Booking", null)
-                        .WithMany("Transactions")
-                        .HasForeignKey("BookingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("tourismBigBang.Models.Booking", b =>
-                {
-                    b.Navigation("Transactions");
-                });
-
             modelBuilder.Entity("tourismBigBang.Models.Hotel", b =>
                 {
-                    b.Navigation("DaySchedules");
-
                     b.Navigation("Foods");
                 });
 
@@ -464,11 +400,6 @@ namespace tourismBigBang.Migrations
                     b.Navigation("Spots");
                 });
 
-            modelBuilder.Entity("tourismBigBang.Models.Spot", b =>
-                {
-                    b.Navigation("DaySchedules");
-                });
-
             modelBuilder.Entity("tourismBigBang.Models.Vehicle", b =>
                 {
                     b.Navigation("DaySchedules");
@@ -476,8 +407,6 @@ namespace tourismBigBang.Migrations
 
             modelBuilder.Entity("tourismBigbang.Models.UserInfo", b =>
                 {
-                    b.Navigation("Bookings");
-
                     b.Navigation("Feedbacks");
 
                     b.Navigation("Packages");

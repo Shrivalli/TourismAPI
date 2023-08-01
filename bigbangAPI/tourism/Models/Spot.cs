@@ -14,6 +14,5 @@ namespace tourismBigBang.Models
 
         [ForeignKey("Place")]
         public int PlaceId { get; set; }
-        public ICollection<DaySchedule>? DaySchedules { get; set; }
     }
 }

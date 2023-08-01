@@ -134,8 +134,8 @@ namespace tourismBigBang.Migrations
                     AgentId = table.Column<int>(type: "int", nullable: false),
                     PlaceId = table.Column<int>(type: "int", nullable: true),
                     PackageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Days = table.Column<int>(type: "int", nullable: false),
-                    PricePerPerson = table.Column<int>(type: "int", nullable: false),
+                    Days = table.Column<int>(type: "int", nullable: true),
+                    PricePerPerson = table.Column<int>(type: "int", nullable: true),
                     ImageName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserInfoId = table.Column<int>(type: "int", nullable: true)
                 },
@@ -180,14 +180,13 @@ namespace tourismBigBang.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(type: "int", nullable: false),
                     PackageId = table.Column<int>(type: "int", nullable: false),
                     StartingDate = table.Column<DateTime>(type: "Date", nullable: false),
                     EndingDate = table.Column<DateTime>(type: "Date", nullable: false),
                     PeopleCount = table.Column<int>(type: "int", nullable: false),
                     TotalPrice = table.Column<int>(type: "int", nullable: false),
                     PersonLimit = table.Column<int>(type: "int", nullable: false),
-                    UserInfoId = table.Column<int>(type: "int", nullable: true)
+                    TransactionStatus = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -198,11 +197,6 @@ namespace tourismBigBang.Migrations
                         principalTable: "Packages",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Bookings_UserInfos_UserInfoId",
-                        column: x => x.UserInfoId,
-                        principalTable: "UserInfos",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -212,8 +206,8 @@ namespace tourismBigBang.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PackageId = table.Column<int>(type: "int", nullable: false),
-                    SpotId = table.Column<int>(type: "int", nullable: false),
-                    HotelId = table.Column<int>(type: "int", nullable: false),
+                    SpotName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    HotelName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     VehicleId = table.Column<int>(type: "int", nullable: false),
                     Daywise = table.Column<int>(type: "int", nullable: false)
                 },
@@ -221,21 +215,9 @@ namespace tourismBigBang.Migrations
                 {
                     table.PrimaryKey("PK_DaySchedules", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_DaySchedules_Hotels_HotelId",
-                        column: x => x.HotelId,
-                        principalTable: "Hotels",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_DaySchedules_Packages_PackageId",
                         column: x => x.PackageId,
                         principalTable: "Packages",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_DaySchedules_Spots_SpotId",
-                        column: x => x.SpotId,
-                        principalTable: "Spots",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -246,50 +228,15 @@ namespace tourismBigBang.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Transactions",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    TransactionStatus = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    BookingId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Transactions", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Transactions_Bookings_BookingId",
-                        column: x => x.BookingId,
-                        principalTable: "Bookings",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Bookings_PackageId",
                 table: "Bookings",
                 column: "PackageId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Bookings_UserInfoId",
-                table: "Bookings",
-                column: "UserInfoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_DaySchedules_HotelId",
-                table: "DaySchedules",
-                column: "HotelId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_DaySchedules_PackageId",
                 table: "DaySchedules",
                 column: "PackageId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_DaySchedules_SpotId",
-                table: "DaySchedules",
-                column: "SpotId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_DaySchedules_VehicleId",
@@ -325,16 +272,14 @@ namespace tourismBigBang.Migrations
                 name: "IX_Spots_PlaceId",
                 table: "Spots",
                 column: "PlaceId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Transactions_BookingId",
-                table: "Transactions",
-                column: "BookingId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Bookings");
+
             migrationBuilder.DropTable(
                 name: "DaySchedules");
 
@@ -345,10 +290,10 @@ namespace tourismBigBang.Migrations
                 name: "Foods");
 
             migrationBuilder.DropTable(
-                name: "Transactions");
+                name: "Spots");
 
             migrationBuilder.DropTable(
-                name: "Spots");
+                name: "Packages");
 
             migrationBuilder.DropTable(
                 name: "Vehicles");
@@ -357,16 +302,10 @@ namespace tourismBigBang.Migrations
                 name: "Hotels");
 
             migrationBuilder.DropTable(
-                name: "Bookings");
-
-            migrationBuilder.DropTable(
-                name: "Packages");
+                name: "UserInfos");
 
             migrationBuilder.DropTable(
                 name: "Places");
-
-            migrationBuilder.DropTable(
-                name: "UserInfos");
         }
     }
 }

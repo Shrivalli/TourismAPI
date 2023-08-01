@@ -9,12 +9,12 @@ namespace tourismBigbang.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeeController : ControllerBase
+    public class PlaceController : ControllerBase
     {
         private readonly TourismContext _context;
         private readonly IWebHostEnvironment _hostEnvironment;
 
-        public EmployeeController(TourismContext context, IWebHostEnvironment hostEnvironment)
+        public PlaceController(TourismContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
             this._hostEnvironment = hostEnvironment;

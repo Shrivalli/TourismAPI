@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using tourismBigBang.Services.UserViewService;
+using tourismBigBang.Repository.UserViewRepo;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +18,8 @@ builder.Services.AddDbContext<TourismContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("loginsetup"));
 });
-
+builder.Services.AddScoped<IUserViewRepo, UserViewRepo>();
+builder.Services.AddScoped<IUserViewService, UserViewService>();
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

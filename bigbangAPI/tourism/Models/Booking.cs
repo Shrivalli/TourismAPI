@@ -18,6 +18,7 @@ namespace tourismBigBang.Models
         public int PeopleCount { get; set; }
         public int TotalPrice { get; set; }
         public int PersonLimit { get; set; }
-        public ICollection<Transaction>? Transactions { get; set; }
+
+        public string? TransactionStatus { get; set; }
     }
 }

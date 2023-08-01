@@ -14,7 +14,6 @@ namespace tourismBigBang.Models
         public IFormFile? HotelImage { get; set; }
         [NotMapped]
         public string? ImageSrc { get; set; }
-        public ICollection<DaySchedule>? DaySchedules { get; set; }
         public ICollection<Food>? Foods { get; set; }
     }
 }

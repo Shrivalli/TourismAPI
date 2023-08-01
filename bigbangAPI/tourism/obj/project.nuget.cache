@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O4bkSIQvNO476SQUyAxhHJ0MZs37As8jdskjeBxYnhgh92/ZCwneE2zx9IagCfm/WecYnFoarPfVpsYRh9j2Jw==",
+  "dgSpecHash": "v3H1PsuBLtLdVtF/mGxLA8UwcxHbznt3B4UxGuDcku9yViMFZyGWTvsoVsfVeLTnvPWGqi8Dhw1Bz7+cUdIULw==",
   "success": true,
-  "projectFilePath": "E:\\React project\\react-bigbang\\loginauth\\tourismBigBang.csproj",
+  "projectFilePath": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

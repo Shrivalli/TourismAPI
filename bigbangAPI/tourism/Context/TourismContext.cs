@@ -16,14 +16,11 @@ namespace tourismBigbang.Context
         public DbSet<Feedback> Feedbacks { get; set; }
         public DbSet<Hotel> Hotels { get; set; }
         public DbSet<Package> Packages { get; set; }
-        public DbSet<Transaction> Transactions { get; set; }
         public DbSet<Vehicle> Vehicles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            //modelBuilder.Entity<Owner>().ToTable("owners");
-
         }
     }
 }

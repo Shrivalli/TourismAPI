@@ -10,10 +10,8 @@ namespace tourismBigBang.Models
         public int Id { get; set; }
         [ForeignKey("Package")]
         public int PackageId { get; set; }
-        [ForeignKey("Spot")]
-        public int SpotId { get; set; }
-        [ForeignKey("Hotel")]
-        public int HotelId { get; set; }
+        public string? SpotName { get; set; }
+        public string? HotelName { get; set; }
         [ForeignKey("Vehicle")]
         public int VehicleId { get; set; }
         public int Daywise { get; set; }

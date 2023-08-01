@@ -12,11 +12,8 @@ namespace tourismBigBang.Models
         public int AgentId { get; set; }
         [ForeignKey("Place")]
         public int? PlaceId { get; set; }
-        [Required] public string PackageName { get; set; } = string.Empty;
-
-        [Required]
+        public string PackageName { get; set; } = string.Empty;
         public int? Days { get; set; }
-        [Required]
         public int? PricePerPerson { get; set; }
         public string? ImageName { get; set; }
         [NotMapped]
