@@ -17,7 +17,6 @@ namespace tourismBigBang.Models
         public DateTime EndingDate { get; set; }
         public int PeopleCount { get; set; }
         public int TotalPrice { get; set; }
-        public int PersonLimit { get; set; }
 
         public string? TransactionStatus { get; set; }
     }

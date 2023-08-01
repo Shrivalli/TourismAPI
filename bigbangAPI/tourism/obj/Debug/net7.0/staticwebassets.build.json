@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "0NRIjNhMdQZmpwdg23LXCQsRg4JyoeHpNRAYr7OaE1I=",
+  "Hash": "0+SSnq3w9fRsRVawBQq3EWMR3KTp+2TIbzkpB9SPH2Q=",
   "Source": "tourismBigBang",
   "BasePath": "_content/tourismBigBang",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "tourismBigBang\\wwwroot",
+      "Source": "tourismBigBang",
+      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "BasePath": "_content/tourismBigBang",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

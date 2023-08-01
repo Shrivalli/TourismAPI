@@ -16,7 +16,7 @@ namespace tourismBigBang.Models
         [NotMapped]
         public string? ImageSrc { get; set; }
         public ICollection<Spot>? Spots { get; set; }
-        public ICollection<Hotel>? Hotel { get; set; }
+   
         public ICollection<Package>? Packages { get; set; }
     }
 }

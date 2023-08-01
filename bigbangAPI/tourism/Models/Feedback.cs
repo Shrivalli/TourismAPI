@@ -10,6 +10,6 @@ namespace tourismBigBang.Models
         public int Id { get; set; }
         public string? Comments { get; set; }
         [ForeignKey("UserInfo")]
-        public int? UserId { get; set; }
+        public int UserInfoId { get; set; }
     }
 }

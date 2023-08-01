@@ -518,3 +518,4 @@ E:\Kanini-BigBang\bigbangAPI\tourism\obj\Debug\net7.0\refint\tourismBigBang.dll
 E:\Kanini-BigBang\bigbangAPI\tourism\obj\Debug\net7.0\tourismBigBang.pdb
 E:\Kanini-BigBang\bigbangAPI\tourism\obj\Debug\net7.0\tourismBigBang.genruntimeconfig.cache
 E:\Kanini-BigBang\bigbangAPI\tourism\obj\Debug\net7.0\ref\tourismBigBang.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\tourismBigBang.staticwebassets.runtime.json

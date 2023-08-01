@@ -12,7 +12,7 @@ using tourismBigbang.Context;
 namespace tourismBigBang.Migrations
 {
     [DbContext(typeof(TourismContext))]
-    [Migration("20230801053009_Tourism")]
+    [Migration("20230801142452_Tourism")]
     partial class Tourism
     {
         /// <inheritdoc />
@@ -40,9 +40,6 @@ namespace tourismBigBang.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("PeopleCount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PersonLimit")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("StartingDate")
@@ -81,14 +78,12 @@ namespace tourismBigBang.Migrations
                     b.Property<string>("SpotName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("VehicleId")
-                        .HasColumnType("int");
+                    b.Property<string>("VehicleName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("PackageId");
-
-                    b.HasIndex("VehicleId");
 
                     b.ToTable("DaySchedules");
                 });
@@ -104,10 +99,7 @@ namespace tourismBigBang.Migrations
                     b.Property<string>("Comments")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("UserInfoId")
+                    b.Property<int>("UserInfoId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -115,27 +107,6 @@ namespace tourismBigBang.Migrations
                     b.HasIndex("UserInfoId");
 
                     b.ToTable("Feedbacks");
-                });
-
-            modelBuilder.Entity("tourismBigBang.Models.Food", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("FoodDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("HotelId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("HotelId");
-
-                    b.ToTable("Foods");
                 });
 
             modelBuilder.Entity("tourismBigBang.Models.Hotel", b =>
@@ -149,15 +120,18 @@ namespace tourismBigBang.Migrations
                     b.Property<string>("HotelName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("HotelRating")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImageName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PlaceId")
+                    b.Property<int>("SpotId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PlaceId");
+                    b.HasIndex("SpotId");
 
                     b.ToTable("Hotels");
                 });
@@ -170,26 +144,32 @@ namespace tourismBigBang.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AgentId")
+                    b.Property<int>("Days")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Days")
-                        .HasColumnType("int");
+                    b.Property<string>("Food")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Iternary")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PackageName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("PlaceId")
+                    b.Property<int>("PersonLimit")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PricePerPerson")
+                    b.Property<int>("PlaceId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("UserInfoId")
+                    b.Property<int>("PricePerPerson")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserInfoId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -229,14 +209,17 @@ namespace tourismBigBang.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("ImageName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("PlaceId")
                         .HasColumnType("int");
 
                     b.Property<string>("SpotAddress")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SpotDuration")
-                        .HasColumnType("int");
+                    b.Property<double>("SpotDuration")
+                        .HasColumnType("float");
 
                     b.Property<string>("SpotName")
                         .HasColumnType("nvarchar(max)");
@@ -246,28 +229,6 @@ namespace tourismBigBang.Migrations
                     b.HasIndex("PlaceId");
 
                     b.ToTable("Spots");
-                });
-
-            modelBuilder.Entity("tourismBigBang.Models.Vehicle", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ImageName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("VehicleName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("VehicleType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Vehicles");
                 });
 
             modelBuilder.Entity("tourismBigbang.Models.UserInfo", b =>
@@ -329,35 +290,22 @@ namespace tourismBigBang.Migrations
                         .HasForeignKey("PackageId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("tourismBigBang.Models.Vehicle", null)
-                        .WithMany("DaySchedules")
-                        .HasForeignKey("VehicleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("tourismBigBang.Models.Feedback", b =>
                 {
                     b.HasOne("tourismBigbang.Models.UserInfo", null)
                         .WithMany("Feedbacks")
-                        .HasForeignKey("UserInfoId");
-                });
-
-            modelBuilder.Entity("tourismBigBang.Models.Food", b =>
-                {
-                    b.HasOne("tourismBigBang.Models.Hotel", null)
-                        .WithMany("Foods")
-                        .HasForeignKey("HotelId")
+                        .HasForeignKey("UserInfoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
             modelBuilder.Entity("tourismBigBang.Models.Hotel", b =>
                 {
-                    b.HasOne("tourismBigBang.Models.Place", null)
+                    b.HasOne("tourismBigBang.Models.Spot", null)
                         .WithMany("Hotel")
-                        .HasForeignKey("PlaceId")
+                        .HasForeignKey("SpotId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -366,11 +314,15 @@ namespace tourismBigBang.Migrations
                 {
                     b.HasOne("tourismBigBang.Models.Place", null)
                         .WithMany("Packages")
-                        .HasForeignKey("PlaceId");
+                        .HasForeignKey("PlaceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("tourismBigbang.Models.UserInfo", null)
                         .WithMany("Packages")
-                        .HasForeignKey("UserInfoId");
+                        .HasForeignKey("UserInfoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("tourismBigBang.Models.Spot", b =>
@@ -382,11 +334,6 @@ namespace tourismBigBang.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("tourismBigBang.Models.Hotel", b =>
-                {
-                    b.Navigation("Foods");
-                });
-
             modelBuilder.Entity("tourismBigBang.Models.Package", b =>
                 {
                     b.Navigation("Bookings");
@@ -396,16 +343,14 @@ namespace tourismBigBang.Migrations
 
             modelBuilder.Entity("tourismBigBang.Models.Place", b =>
                 {
-                    b.Navigation("Hotel");
-
                     b.Navigation("Packages");
 
                     b.Navigation("Spots");
                 });
 
-            modelBuilder.Entity("tourismBigBang.Models.Vehicle", b =>
+            modelBuilder.Entity("tourismBigBang.Models.Spot", b =>
                 {
-                    b.Navigation("DaySchedules");
+                    b.Navigation("Hotel");
                 });
 
             modelBuilder.Entity("tourismBigbang.Models.UserInfo", b =>
