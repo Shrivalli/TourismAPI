@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNet.Identity;
 using tourismBigbang.Models.Dto;
 using tourismBigbang.Helpers;
+using tourismBigBang.Models;
 
 namespace tourismBigbang.Controllers
 {
@@ -63,7 +64,8 @@ namespace tourismBigbang.Controllers
             {
                 AccessToken = newAccessToken,
                 RefreshToken = newRefreshToken,
-                Role=user.Role
+                Role=user.Role,
+                UserId=user.Id
             });
         }
 
@@ -121,7 +123,7 @@ namespace tourismBigbang.Controllers
             var identity = new ClaimsIdentity(new Claim[]
             {
                 new Claim(ClaimTypes.Role, user.Role),
-                new Claim(ClaimTypes.Name,$"{user.Username}")
+                new Claim(ClaimTypes.Email,$"{user.Email}")
             });
 
             var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);

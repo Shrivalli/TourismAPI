@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using tourismBigbang.Models;
+using tourismBigBang.Global_Exception;
+using tourismBigBang.Models;
 using tourismBigBang.Models.Dto;
 using tourismBigBang.Models.View_Model;
 using tourismBigBang.Repository.UserViewRepo;
@@ -37,13 +40,16 @@ namespace tourismBigBang.Services.UserViewService
                 PlaceName = r.PlaceName,
                 MinimumPrice = r.MinimumPrice
             }).ToList();
-
+            if(planDTOs==null)
+            {
+                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+            }
             return planDTOs;
         }
         //Displaying the packages based on the place
         public async Task<List<OverallPackage>> GetPackageDetails(int placeId)
         {
-            var packages = await _userViewRepo.GetPackage(); // Assuming GetUserViewRepo returns a collection of packages
+            var packages = await _userViewRepo.GetPackageByPlaceId(placeId); // Assuming GetUserViewRepo returns a collection of packages
             var daySchedules = await _userViewRepo.GetDaySchedule(); // Assuming GetUserViewRepo returns a collection of day schedules
 
             var joinedData = (from package in packages
@@ -53,15 +59,18 @@ namespace tourismBigBang.Services.UserViewService
                               {
                                   PackageId = package.Id,
                                   PackageName = package.PackageName,
-                                  Activities = packageDaySchedules.Select(ds => ds.SpotName).Count(),
-                                  Hotel = packageDaySchedules.Select(ds => ds.HotelName).Count(),
+                                  Activities = packageDaySchedules.Select(ds => ds.SpotName).Distinct().Count(),
+                                  Hotel = packageDaySchedules.Select(ds => ds.HotelName).Distinct().Count(),
                                   PricePerPerson= package.PricePerPerson,
-                                  PersonLimit= package.PersonLimit,
                                   Food= package.Food,
                                   Iternary = package.Iternary,
-                                  Days=package.Days
+                                  Days=package.Days,
+                                  Image=package.ImageName
                               }).ToList();
-
+            if (joinedData == null)
+            {
+                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+            }
             return joinedData;
         }
         //Getting the DayWise of the particular package id
@@ -101,9 +110,39 @@ namespace tourismBigBang.Services.UserViewService
                     dayWiseSchedules.Add(dayWiseSchedule);
                 }
             }
-
+            if (dayWiseSchedules == null)
+            {
+                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+            }
             return dayWiseSchedules;
         }
-
+        public async Task<UserInfo> GetUserInfoForBooking(int id)
+        {
+            var userInfo= await _userViewRepo.GetUserDetailsForBooking(id);
+            if (userInfo == null)
+            {
+                throw new Exception(CustomException.ExceptionMessages["NoId"]);
+            }
+            return userInfo;
+        }
+        public async Task<Booking> PostBookingDetails(Booking booking)
+        {
+            var bookingDetails = await _userViewRepo.PostBooking(booking);
+            if (bookingDetails == null)
+            {
+                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+            }
+            return bookingDetails;
+        }
+        //Common for both UserSide and AgentSide
+        public async Task<List<Place>> GetAllPlaces()
+        {
+            var get = await _userViewRepo.GetPlace();
+            if (get == null)
+            {
+                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+            }
+            return get;
+        }
     }
 }

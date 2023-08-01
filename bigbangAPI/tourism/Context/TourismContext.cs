@@ -8,6 +8,7 @@ namespace tourismBigbang.Context
     {
         public TourismContext(DbContextOptions<TourismContext> options) : base(options) { }
         public DbSet<UserInfo> UserInfos { get; set; }
+        public DbSet<AgentApproval> AgentApprovals { get; set; }
         public DbSet<Place>Places { get; set; }
         public DbSet<Spot> Spots { get; set; }
         public DbSet<Booking> Bookings { get; set; }

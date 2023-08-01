@@ -260,6 +260,7 @@ E:\React project\react-bigbang\loginauth\bin\Debug\net7.0\runtimes\win\lib\net6.
 E:\React project\react-bigbang\loginauth\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\appsettings.Development.json
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\appsettings.json
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\tourismBigBang.staticwebassets.runtime.json
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\tourismBigBang.exe
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\tourismBigBang.deps.json
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\tourismBigBang.runtimeconfig.json
@@ -518,4 +519,3 @@ E:\Kanini-BigBang\bigbangAPI\tourism\obj\Debug\net7.0\refint\tourismBigBang.dll
 E:\Kanini-BigBang\bigbangAPI\tourism\obj\Debug\net7.0\tourismBigBang.pdb
 E:\Kanini-BigBang\bigbangAPI\tourism\obj\Debug\net7.0\tourismBigBang.genruntimeconfig.cache
 E:\Kanini-BigBang\bigbangAPI\tourism\obj\Debug\net7.0\ref\tourismBigBang.dll
-E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\tourismBigBang.staticwebassets.runtime.json

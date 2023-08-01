@@ -12,13 +12,29 @@ namespace tourismBigBang.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "AgentApprovals",
+                columns: table => new
+                {
+                    Username = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Role = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
+                    AgencyName = table.Column<string>(type: "nvarchar(35)", maxLength: 35, nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
+                    PhoneNumber = table.Column<long>(type: "bigint", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AgentApprovals", x => x.Username);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Places",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    PlaceName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImageName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    PlaceName = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    ImageName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -31,15 +47,16 @@ namespace tourismBigBang.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Username = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FirstName = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    LastName = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    Username = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Token = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Role = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Role = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
+                    AgencyName = table.Column<string>(type: "nvarchar(35)", maxLength: 35, nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
                     RefreshToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumber = table.Column<long>(type: "bigint", nullable: false),
+                    PhoneNumber = table.Column<long>(type: "bigint", nullable: true),
                     RefreshTokenExpiryTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -53,10 +70,10 @@ namespace tourismBigBang.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    SpotName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SpotAddress = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SpotName = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
+                    SpotAddress = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     SpotDuration = table.Column<double>(type: "float", nullable: false),
-                    ImageName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ImageName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     PlaceId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -76,7 +93,8 @@ namespace tourismBigBang.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Comments = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Comments = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
+                    Ratings = table.Column<int>(type: "int", nullable: false),
                     UserInfoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -98,13 +116,12 @@ namespace tourismBigBang.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserInfoId = table.Column<int>(type: "int", nullable: false),
                     PlaceId = table.Column<int>(type: "int", nullable: false),
-                    PackageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PackageName = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     Days = table.Column<int>(type: "int", nullable: false),
                     PricePerPerson = table.Column<int>(type: "int", nullable: false),
-                    PersonLimit = table.Column<int>(type: "int", nullable: false),
-                    Food = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Iternary = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImageName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Food = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    Iternary = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    ImageName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -129,10 +146,10 @@ namespace tourismBigBang.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    HotelName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    HotelName = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
                     SpotId = table.Column<int>(type: "int", nullable: false),
                     HotelRating = table.Column<int>(type: "int", nullable: false),
-                    ImageName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    ImageName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -156,7 +173,7 @@ namespace tourismBigBang.Migrations
                     EndingDate = table.Column<DateTime>(type: "Date", nullable: false),
                     PeopleCount = table.Column<int>(type: "int", nullable: false),
                     TotalPrice = table.Column<int>(type: "int", nullable: false),
-                    TransactionStatus = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    TransactionStatus = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -176,9 +193,9 @@ namespace tourismBigBang.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PackageId = table.Column<int>(type: "int", nullable: false),
-                    SpotName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    HotelName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    VehicleName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SpotName = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: true),
+                    HotelName = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
+                    VehicleName = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
                     Daywise = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -231,6 +248,9 @@ namespace tourismBigBang.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "AgentApprovals");
+
             migrationBuilder.DropTable(
                 name: "Bookings");
 

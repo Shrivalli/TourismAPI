@@ -5,6 +5,10 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using tourismBigBang.Services.UserViewService;
 using tourismBigBang.Repository.UserViewRepo;
+using tourismBigBang.Repository.AgentViewRepo;
+using tourismBigBang.Services.AgentViewService;
+using tourismBigBang.Repository.AdminViewRepo;
+using tourismBigBang.Services.AdminViewService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +24,10 @@ builder.Services.AddDbContext<TourismContext>(option =>
 });
 builder.Services.AddScoped<IUserViewRepo, UserViewRepo>();
 builder.Services.AddScoped<IUserViewService, UserViewService>();
+builder.Services.AddScoped<IAgentViewRepo, AgentViewRepo>();
+builder.Services.AddScoped<IAgentViewService, AgentViewService>();
+builder.Services.AddScoped<IAdminViewRepo, AdminViewRepo>();
+builder.Services.AddScoped<IAdminViewService, AdminViewService>();
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
