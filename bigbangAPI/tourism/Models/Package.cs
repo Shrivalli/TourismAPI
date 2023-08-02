@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using tourismBigBang.Helpers;
+using Xunit.Sdk;
 
 namespace tourismBigBang.Models
 {
@@ -19,6 +21,7 @@ namespace tourismBigBang.Models
 
         [Required(ErrorMessage = "The PackageName field is required.")]
         [StringLength(30, ErrorMessage = "The PackageName must be at most 30 characters long.")]
+        [RegularExpression(@"^[A-Za-z ]+$", ErrorMessage = "The PackageName must contain only alphabets.")]
         public string PackageName { get; set; } = string.Empty;
 
         [Range(1, int.MaxValue, ErrorMessage = "The Days field must be greater than 0.")]
@@ -28,6 +31,7 @@ namespace tourismBigBang.Models
         public int PricePerPerson { get; set; }
 
         [StringLength(50, ErrorMessage = "The Food must be at most 50 characters long.")]
+        [RegularExpression(@"^[A-Za-z ]+$", ErrorMessage = "The FoodName must contain only alphabets.")]
         public string? Food { get; set; }
 
         [StringLength(50, ErrorMessage = "The Iternary must be at most 50 characters long.")]
@@ -37,7 +41,9 @@ namespace tourismBigBang.Models
         public string? ImageName { get; set; }
 
         [NotMapped]
-        [Required(ErrorMessage = "The PackageImage field is required.")]
+        [Required(ErrorMessage = "Image is required")]
+        [AllowedExtensions(new string[] { ".jpg", ".jpeg", ".png", ".gif" }, ErrorMessage = "Invalid file format. Only .jpg, .jpeg, .png, and .gif are allowed.")]
+        [MaxFileSize(10 * 1024 * 1024, ErrorMessage = "Maximum file size allowed is 10MB.")]
         public IFormFile? PackageImage { get; set; }
 
         [NotMapped]

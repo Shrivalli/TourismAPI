@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using tourismBigbang.Models;
 using tourismBigBang.Global_Exception;
 using tourismBigBang.Models;
 using tourismBigBang.Models.Dto;
@@ -29,7 +28,8 @@ namespace tourismBigBang.Services.UserViewService
                     {
                         Id = place.Id,
                         PlaceName = place.PlaceName,
-                        MinimumPrice = placePackages.Min(pp => pp.PricePerPerson)
+                        MinimumPrice = placePackages.Min(pp => pp.PricePerPerson),
+                        Image=place.ImageName
                     })
                 .ToList();
 
@@ -38,7 +38,8 @@ namespace tourismBigBang.Services.UserViewService
             {
                 Id = r.Id,
                 PlaceName = r.PlaceName,
-                MinimumPrice = r.MinimumPrice
+                MinimumPrice = r.MinimumPrice,
+                Image=r.Image
             }).ToList();
             if(planDTOs==null)
             {

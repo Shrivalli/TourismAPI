@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v3H1PsuBLtLdVtF/mGxLA8UwcxHbznt3B4UxGuDcku9yViMFZyGWTvsoVsfVeLTnvPWGqi8Dhw1Bz7+cUdIULw==",
+  "dgSpecHash": "4m+tuHoYGANnrrocBgIhw7pVPij9aLdufEpO9igWMWIoMgr+NLmF1+7jqL+OmaIPNchfEh/3+28LG1rZoND8HQ==",
   "success": true,
   "projectFilePath": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj",
   "expectedPackageFiles": [
@@ -238,7 +238,10 @@
     "C:\\Users\\USER\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\USER\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\xunit.extensibility.core\\2.5.0\\xunit.extensibility.core.2.5.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\xunit.extensibility.execution\\2.5.0\\xunit.extensibility.execution.2.5.0.nupkg.sha512"
   ],
   "logs": [
     {

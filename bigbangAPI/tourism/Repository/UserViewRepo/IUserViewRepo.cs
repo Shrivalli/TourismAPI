@@ -1,5 +1,4 @@
-﻿using tourismBigbang.Models;
-using tourismBigBang.Models;
+﻿using tourismBigBang.Models;
 
 namespace tourismBigBang.Repository.UserViewRepo
 {

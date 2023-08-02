@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using tourismBigbang.Context;
-using tourismBigbang.Models;
 using tourismBigBang.Global_Exception;
 using tourismBigBang.Models;
 

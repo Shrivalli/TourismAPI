@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar233650477.jpg",
+      "PackagePath": "staticwebassets\\Images\\Amritsar233650477.jpg"
+    },
+    {
+      "Id": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar233744317.jpg",
+      "PackagePath": "staticwebassets\\Images\\Amritsar233744317.jpg"
+    },
+    {
+      "Id": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar234143629.jpg",
+      "PackagePath": "staticwebassets\\Images\\Amritsar234143629.jpg"
+    },
+    {
+      "Id": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Goa232830117.jpg",
+      "PackagePath": "staticwebassets\\Images\\Goa232830117.jpg"
+    },
+    {
+      "Id": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Kerala232754255.jpg",
+      "PackagePath": "staticwebassets\\Images\\Kerala232754255.jpg"
+    },
+    {
+      "Id": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shimla233006151.jpg",
+      "PackagePath": "staticwebassets\\Images\\Shimla233006151.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.tourismBigBang.props",
+      "PackagePath": "build\\tourismBigBang.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.tourismBigBang.props",
+      "PackagePath": "buildMultiTargeting\\tourismBigBang.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.tourismBigBang.props",
+      "PackagePath": "buildTransitive\\tourismBigBang.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.tourismBigBang.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

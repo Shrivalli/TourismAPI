@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using tourismBigBang.Helpers;
+using Xunit.Sdk;
 
 namespace tourismBigBang.Models
 {
@@ -11,6 +13,7 @@ namespace tourismBigBang.Models
 
         [Required(ErrorMessage = "The HotelName field is required.")]
         [StringLength(30, ErrorMessage = "The HotelName must be at most 100 characters long.")]
+        [RegularExpression(@"^[A-Za-z ]+$", ErrorMessage = "The HotelName must contain only alphabets.")]
         public string? HotelName { get; set; }
 
         [Required(ErrorMessage = "The SpotId field is required.")]
@@ -24,7 +27,9 @@ namespace tourismBigBang.Models
         public string? ImageName { get; set; }
 
         [NotMapped]
-        [Required(ErrorMessage = "The HotelImage field is required.")]
+        [Required(ErrorMessage = "Image is required")]
+        [AllowedExtensions(new string[] { ".jpg", ".jpeg", ".png", ".gif" }, ErrorMessage = "Invalid file format. Only .jpg, .jpeg, .png, and .gif are allowed.")]
+        [MaxFileSize(10 * 1024 * 1024, ErrorMessage = "Maximum file size allowed is 10MB.")]
         public IFormFile? HotelImage { get; set; }
 
         [NotMapped]

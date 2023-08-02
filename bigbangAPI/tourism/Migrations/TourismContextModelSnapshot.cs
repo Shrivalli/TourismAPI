@@ -22,35 +22,6 @@ namespace tourismBigBang.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("tourismBigBang.Models.AgentApproval", b =>
-                {
-                    b.Property<string>("Username")
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
-
-                    b.Property<string>("AgencyName")
-                        .HasMaxLength(35)
-                        .HasColumnType("nvarchar(35)");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<string>("Password")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<long?>("PhoneNumber")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("Role")
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
-
-                    b.HasKey("Username");
-
-                    b.ToTable("AgentApprovals");
-                });
-
             modelBuilder.Entity("tourismBigBang.Models.Booking", b =>
                 {
                     b.Property<int>("Id")
@@ -127,7 +98,6 @@ namespace tourismBigBang.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Comments")
-                        .IsRequired()
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
@@ -172,6 +142,23 @@ namespace tourismBigBang.Migrations
                     b.HasIndex("SpotId");
 
                     b.ToTable("Hotels");
+                });
+
+            modelBuilder.Entity("tourismBigBang.Models.ImageGallery", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("imageGalleries");
                 });
 
             modelBuilder.Entity("tourismBigBang.Models.Package", b =>
@@ -296,28 +283,26 @@ namespace tourismBigBang.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<byte[]>("Hashkey")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<bool?>("IsActive")
+                        .HasMaxLength(10)
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<string>("Password")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<byte[]>("Password")
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<long?>("PhoneNumber")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("RefreshToken")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("RefreshTokenExpiryTime")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Role")
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
-
-                    b.Property<string>("Token")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
                         .HasMaxLength(15)

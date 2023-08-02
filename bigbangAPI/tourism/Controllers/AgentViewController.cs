@@ -41,12 +41,12 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpPost("PostPackage")]
-        public async Task<ActionResult<Package>> PostPackageByAgent(Package package)
+        [HttpPost("PostDayWise")]
+        public async Task<ActionResult<DaySchedule>> PostDayScheduleByAgent(DaySchedule daySchedule)
         {
             try
             {
-                var post = await _agentViewService.PostPackageByAgent(package);
+                var post = await _agentViewService.PostDayScheduleByAgent(daySchedule);
                 return Ok(post);
             }
             catch (Exception ex)
@@ -54,12 +54,38 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpPost("PostDayWise")]
-        public async Task<ActionResult<DaySchedule>> PostDayScheduleByAgent(DaySchedule daySchedule)
+        [HttpPost("PostPackageWithImage")]
+        public async Task<ActionResult<Package>> PostPackageImage([FromForm] Package package)
         {
             try
             {
-                var post = await _agentViewService.PostDayScheduleByAgent(daySchedule);
+                var post = await _agentViewService.PostPackageImage(package);
+                return Ok(post);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpPost("PostSpotWithImage")]
+        public async Task<ActionResult<Package>> PostSpotImage([FromForm] Spot spot)
+        {
+            try
+            {
+                var post = await _agentViewService.PostSpotImage(spot);
+                return Ok(post);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpPost("PostHotelWithImage")]
+        public async Task<ActionResult<Hotel>> PostHotelImage([FromForm] Hotel hotel)
+        {
+            try
+            {
+                var post = await _agentViewService.PostHotelImage(hotel);
                 return Ok(post);
             }
             catch (Exception ex)

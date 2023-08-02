@@ -1,5 +1,4 @@
-﻿using tourismBigbang.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using tourismBigBang.Models;
 
 namespace tourismBigbang.Context
@@ -8,7 +7,6 @@ namespace tourismBigbang.Context
     {
         public TourismContext(DbContextOptions<TourismContext> options) : base(options) { }
         public DbSet<UserInfo> UserInfos { get; set; }
-        public DbSet<AgentApproval> AgentApprovals { get; set; }
         public DbSet<Place>Places { get; set; }
         public DbSet<Spot> Spots { get; set; }
         public DbSet<Booking> Bookings { get; set; }
@@ -16,6 +14,7 @@ namespace tourismBigbang.Context
         public DbSet<Feedback> Feedbacks { get; set; }
         public DbSet<Hotel> Hotels { get; set; }
         public DbSet<Package> Packages { get; set; }
+        public DbSet<ImageGallery> imageGalleries { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
