@@ -47,7 +47,15 @@ namespace tourismBigBang.Repository.UserViewRepo
             return packages;
         }
 
-
+        public async Task<List<ImageGallery>> GetGallery()
+        {
+            var getGalleryDetails = await _context.imageGalleries.ToListAsync();
+            if (getGalleryDetails == null)
+            {
+                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+            }
+            return getGalleryDetails;
+        }
         public async Task<List<Hotel>> GetHotel()
         {
             var getHotelDetails=await  _context.Hotels.ToListAsync();

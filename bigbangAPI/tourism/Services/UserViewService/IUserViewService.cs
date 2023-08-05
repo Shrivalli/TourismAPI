@@ -8,10 +8,11 @@ namespace tourismBigBang.Services.UserViewService
     public interface IUserViewService
     {
         Task<List<PlanDTO>> GetPlans();
-        Task<List<OverallPackage>> GetPackageDetails(int placeId );
+        Task<List<PackagesOverall>> GetPackageDetails(int placeId );
         Task<List<DayWiseSchedule>> GetDayWise(int packageId);
         Task<UserInfo> GetUserInfoForBooking(int id);
         Task<Booking> PostBookingDetails(Booking booking);
         Task<List<Place>> GetAllPlaces();
+        Task<List<ImageGallery>> GetAllImages();
     }
 }

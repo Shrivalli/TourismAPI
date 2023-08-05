@@ -10,7 +10,6 @@ namespace tourismBigBang.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Image Name is required")]
         public string? ImageName { get; set; }
 
         [NotMapped]

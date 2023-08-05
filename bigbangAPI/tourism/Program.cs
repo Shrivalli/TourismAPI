@@ -13,6 +13,7 @@ using tourismBigBang.Repository.UserTableRepo;
 using tourismBigBang.Services.UserTableService;
 using tourismBigBang.Services.TokenService;
 using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -91,7 +92,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+/*app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(Path.Combine(app.Environment.ContentRootPath, "wwwroot/Images")),
+    RequestPath = "wwwroot/Images"
+});*/
 app.UseHttpsRedirection();
 
 app.UseCors("MyPolicy");

@@ -12,7 +12,7 @@ using tourismBigbang.Context;
 namespace tourismBigBang.Migrations
 {
     [DbContext(typeof(TourismContext))]
-    [Migration("20230802230636_OnInit")]
+    [Migration("20230803054521_OnInit")]
     partial class OnInit
     {
         /// <inheritdoc />
@@ -289,8 +289,7 @@ namespace tourismBigBang.Migrations
                     b.Property<byte[]>("Hashkey")
                         .HasColumnType("varbinary(max)");
 
-                    b.Property<bool?>("IsActive")
-                        .HasMaxLength(10)
+                    b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<string>("LastName")

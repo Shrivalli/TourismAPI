@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using tourismBigBang.Global_Exception;
 using tourismBigBang.Models;
 using tourismBigBang.Models.Dto;
@@ -10,9 +11,11 @@ namespace tourismBigBang.Services.UserViewService
     public class UserViewService : IUserViewService
     {
         private readonly IUserViewRepo _userViewRepo;
-        public UserViewService(IUserViewRepo userViewRepo)
+        private readonly IWebHostEnvironment _hostEnvironment;
+        public UserViewService(IUserViewRepo userViewRepo, IWebHostEnvironment hostEnvironment)
         {
             _userViewRepo = userViewRepo;
+            _hostEnvironment = hostEnvironment;
         }
         //Displaying all the places and the minimum price
         public async Task<List<PlanDTO>> GetPlans()
@@ -20,43 +23,59 @@ namespace tourismBigBang.Services.UserViewService
             var places = await _userViewRepo.GetPlace();
             var packages = await _userViewRepo.GetPackage();
 
-            var result = places
-                .GroupJoin(packages,
-                    place => place.Id,
-                    package => package.PlaceId,
-                    (place, placePackages) => new
-                    {
-                        Id = place.Id,
-                        PlaceName = place.PlaceName,
-                        MinimumPrice = placePackages.Min(pp => pp.PricePerPerson),
-                        Image=place.ImageName
-                    })
-                .ToList();
-
-            // Create a list of PlanDTO objects based on the 'result'
-            var planDTOs = result.Select(r => new PlanDTO
+            if (places == null || packages == null)
             {
-                Id = r.Id,
-                PlaceName = r.PlaceName,
-                MinimumPrice = r.MinimumPrice,
-                Image=r.Image
-            }).ToList();
-            if(planDTOs==null)
-            {
-                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+                return new List<PlanDTO>();
             }
-            return planDTOs;
+
+            var packageGroups = packages.GroupBy(p => p.PlaceId, (key, group) => new { PlaceId = key, MinimumPrice = group.Min(p => p.PricePerPerson) });
+
+            var planDTOs = (from place in places
+                           join packageGroup in packageGroups on place.Id equals packageGroup.PlaceId into packagesForPlace
+                           from package in packagesForPlace.DefaultIfEmpty()
+                           select new PlanDTO
+                           {
+                               Id = place.Id,
+                               PlaceName = place.PlaceName,
+                               MinimumPrice = package?.MinimumPrice ?? 0,
+                               Image = place.ImageName ?? "" // Provide a default value if ImageSrc is null
+                           }).ToList();
+
+
+            var imageList = new List<PlanDTO>();
+            foreach (var plan in planDTOs)
+            {
+                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Images");
+                var filePath = Path.Combine(uploadsFolder, plan.Image);
+
+                var imageBytes = await System.IO.File.ReadAllBytesAsync(filePath);
+                var imageBase64 = Convert.ToBase64String(imageBytes);
+
+                var tourData = new PlanDTO
+                {
+                    Id = plan.Id,
+                    PlaceName = plan.PlaceName,
+                    MinimumPrice = plan.MinimumPrice,
+                    Image = imageBase64
+                };
+                imageList.Add(tourData);
+            }
+
+            return imageList;
         }
+
         //Displaying the packages based on the place
-        public async Task<List<OverallPackage>> GetPackageDetails(int placeId)
+        public async Task<List<PackagesOverall>> GetPackageDetails(int placeId)
         {
             var packages = await _userViewRepo.GetPackageByPlaceId(placeId); // Assuming GetUserViewRepo returns a collection of packages
             var daySchedules = await _userViewRepo.GetDaySchedule(); // Assuming GetUserViewRepo returns a collection of day schedules
+            Console.WriteLine($"Number of packages retrieved: {packages.Count}");
+            Console.WriteLine($"Number of daySchedules retrieved: {daySchedules.Count}");
 
             var joinedData = (from package in packages
                               join daySchedule in daySchedules
                               on package.Id equals daySchedule.PackageId into packageDaySchedules
-                              select new OverallPackage
+                              select new PackagesOverall
                               {
                                   PackageId = package.Id,
                                   PackageName = package.PackageName,
@@ -68,11 +87,32 @@ namespace tourismBigBang.Services.UserViewService
                                   Days=package.Days,
                                   Image=package.ImageName
                               }).ToList();
-            if (joinedData == null)
+            foreach (var data in joinedData)
             {
-                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+                Console.WriteLine($"PackageId: {data.PackageId}, PricePerPerson: {data.PricePerPerson}");
             }
-            return joinedData;
+            var imageList = new List<PackagesOverall>();
+            foreach (var image in joinedData)
+            {
+                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Images");
+                var filePath = Path.Combine(uploadsFolder, image.Image);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var tourData = new PackagesOverall
+                {
+                    PackageId = image.PackageId,
+                    PackageName = image.PackageName,
+                    Activities = image.Activities,
+                    Hotel = image.Hotel,
+                    Iternary=image.Iternary,
+                    Food=image.Food,
+                    PricePerPerson=image.PricePerPerson,
+                    Days=image.Days,
+                    Image = Convert.ToBase64String(imageBytes)
+                };
+                imageList.Add(tourData);
+            }
+            return imageList;
         }
         //Getting the DayWise of the particular package id
         public async Task<List<DayWiseSchedule>> GetDayWise(int packageId)
@@ -111,11 +151,31 @@ namespace tourismBigBang.Services.UserViewService
                     dayWiseSchedules.Add(dayWiseSchedule);
                 }
             }
-            if (dayWiseSchedules == null)
+            var imageList = new List<DayWiseSchedule>();
+            foreach (var image in dayWiseSchedules)
             {
-                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Images");
+                var filePath = Path.Combine(uploadsFolder, image.SpotImage);
+                var filePath2=Path.Combine(uploadsFolder, image.HotelImage);
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var imageBytes2 = System.IO.File.ReadAllBytes(filePath2);
+                var tourData = new DayWiseSchedule
+                {
+                    Id = image.Id,
+                    DayNo = image.DayNo,
+                    SpotName = image.SpotName,
+                    SpotAddress = image.SpotAddress,
+                    SpotDuration = image.SpotDuration,
+                    HotelName = image.HotelName,
+                    SpotImage = Convert.ToBase64String(imageBytes),
+                    VehicleName=image.VehicleName,
+                    HotelImage=Convert.ToBase64String(imageBytes2),
+                    HotelRating=image.HotelRating,
+                };
+                imageList.Add(tourData);
             }
-            return dayWiseSchedules;
+            return imageList;
+            
         }
         public async Task<UserInfo> GetUserInfoForBooking(int id)
         {
@@ -139,11 +199,34 @@ namespace tourismBigBang.Services.UserViewService
         public async Task<List<Place>> GetAllPlaces()
         {
             var get = await _userViewRepo.GetPlace();
-            if (get == null)
+          
+           if(get==null)
             {
-                throw new Exception(CustomException.ExceptionMessages["Empty"]);
+                throw new Exception("nope");
             }
             return get;
+        }
+        public async Task<List<ImageGallery>> GetAllImages()
+        {
+            var get = await _userViewRepo.GetGallery();
+            var imageList = new List<ImageGallery>();
+            foreach (var image in get)
+            {
+                var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Images");
+                var filePath = Path.Combine(uploadsFolder, image.ImageName);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var tourData = new ImageGallery
+                {
+                    Id = image.Id,
+                    GalleryImage = image.GalleryImage,
+                    ImageSrc = image.ImageSrc,
+                    ImageName = Convert.ToBase64String(imageBytes)
+                };
+                imageList.Add(tourData);
+            }
+            return imageList;
+
         }
     }
 }

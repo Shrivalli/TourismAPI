@@ -9,6 +9,7 @@ namespace tourismBigBang.Repository.UserViewRepo
         Task<List<Package>> GetPackage();
         Task<List<Package>> GetPackageByPlaceId(int placeId);
         Task<List<Hotel>> GetHotel();
+        Task<List<ImageGallery>> GetGallery();
         Task<Hotel> GetHotelByName(string hotelName);
         Task<List<Spot>> GetSpot();
         Task<Spot> GetSpotByName(string spotName);

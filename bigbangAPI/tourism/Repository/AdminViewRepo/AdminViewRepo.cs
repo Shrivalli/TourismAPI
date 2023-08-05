@@ -29,7 +29,7 @@ namespace tourismBigBang.Repository.AdminViewRepo
         }
         public async Task<List<UserInfo>> GetAgentApproval()
         {
-            var get= await _context.UserInfos.Where(s=>s.IsActive==false).ToListAsync();
+            var get= await _context.UserInfos.Where(s=>s.IsActive==false &&s.Role=="Agent").ToListAsync();
             if(get== null)
             {
                 throw new Exception(CustomException.ExceptionMessages["Empty"]);

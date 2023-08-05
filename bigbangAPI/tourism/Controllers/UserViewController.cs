@@ -29,7 +29,7 @@ namespace tourismBigBang.Controllers
             }
         }
         [HttpGet("GetPackageDetails")]
-        public async Task<ActionResult<List<OverallPackage>>> GetPackageDetails(int placeId)
+        public async Task<ActionResult<List<PackagesOverall>>> GetPackageDetails(int placeId)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpPost]
+        [HttpPost("PostBooking")]
         public async Task<ActionResult<Booking>> PostBookingDetails(Booking booking)
         {
             try
@@ -86,6 +86,19 @@ namespace tourismBigBang.Controllers
             try
             {
                 var get = await _userViewService.GetAllPlaces();
+                return Ok(get);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpGet("AllGalleryImages")]
+        public async Task<ActionResult<List<ImageGallery>>> GetAllImages()
+        {
+            try
+            {
+                var get = await _userViewService.GetAllImages();
                 return Ok(get);
             }
             catch (Exception ex)

@@ -522,3 +522,7 @@ E:\Kanini-BigBang\bigbangAPI\tourism\obj\Debug\net7.0\ref\tourismBigBang.dll
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\xunit.abstractions.dll
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\xunit.core.dll
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\xunit.execution.dotnet.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Stripe.net.dll

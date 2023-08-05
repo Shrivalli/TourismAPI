@@ -53,7 +53,7 @@ namespace tourismBigBang.Migrations
                     Email = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
                     PhoneNumber = table.Column<long>(type: "bigint", nullable: true),
                     Hashkey = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
-                    IsActive = table.Column<bool>(type: "bit", maxLength: 10, nullable: true)
+                    IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

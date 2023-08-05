@@ -39,9 +39,7 @@ namespace tourismBigBang.Models
         public long? PhoneNumber { get; set; }
 
         public byte[]? Hashkey { get; set; }
-        [StringLength(10, ErrorMessage = "The IsActive must be at most 10 characters long.")]
-        [RegularExpression(@"^[A-Za-z]+$", ErrorMessage = "The IsActive must contain only alphabets.")]
-        public bool? IsActive { get; set; }
+        public bool IsActive { get; set; }
         public ICollection<Feedback>? Feedbacks { get; set; }
         public ICollection<Package>? Packages { get; set; }
     }
