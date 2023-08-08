@@ -12,5 +12,7 @@ namespace tourismBigBang.Repository.AgentViewRepo
         Task<Spot> PostSpotImage([FromForm] Spot spot);
         Task<Hotel> PostHotelImage([FromForm] Hotel hotel);
         Task<string> SaveImage(IFormFile imageFile);
+
+        Task<List<Package>> GetAllPackages();
     }
 }

@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 using tourismBigbang.Context;
 using tourismBigBang.Global_Exception;
 using tourismBigBang.Models;
-
 namespace tourismBigBang.Repository.AdminViewRepo
 {
     public class AdminViewRepo:IAdminViewRepo
@@ -21,6 +21,7 @@ namespace tourismBigBang.Repository.AdminViewRepo
         {
             if (userInfo == null)
             {
+                Log.Error(" passed object in Posting agent approval is null");
                 throw new Exception(CustomException.ExceptionMessages["Empty"]);
             }
             await _context.UserInfos.AddAsync(userInfo);
@@ -32,6 +33,7 @@ namespace tourismBigBang.Repository.AdminViewRepo
             var get= await _context.UserInfos.Where(s=>s.IsActive==false &&s.Role=="Agent").ToListAsync();
             if(get== null)
             {
+                Log.Error(" Get agent approval is null");
                 throw new Exception(CustomException.ExceptionMessages["Empty"]);
             }
             return get;
@@ -54,9 +56,13 @@ namespace tourismBigBang.Repository.AdminViewRepo
         {
             if (gallery == null)
             {
+                Log.Error(" Posting image in image gallery is null");
                 throw new ArgumentException("Invalid file");
             }
-
+            if (gallery.GalleryImage == null)
+            {
+                throw new Exception("No images in gallery");
+            }
             gallery.ImageName = await SaveImage(gallery.GalleryImage);
             _context.imageGalleries.Add(gallery);
             await _context.SaveChangesAsync();
@@ -67,9 +73,13 @@ namespace tourismBigBang.Repository.AdminViewRepo
         {
             if (place == null)
             {
+                Log.Error("Posting image in place image is null");
                 throw new ArgumentException("Invalid file");
             }
-
+            if (place.PlaceImage == null)
+            {
+                throw new Exception("No images in place");
+            }
             place.ImageName = await SaveImage(place.PlaceImage);
             _context.Places.Add(place);
             await _context.SaveChangesAsync();

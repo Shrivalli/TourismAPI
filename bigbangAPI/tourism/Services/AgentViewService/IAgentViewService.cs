@@ -11,5 +11,6 @@ namespace tourismBigBang.Services.AgentViewService
         Task<Package> PostPackageImage([FromForm] Package package);
         Task<Spot> PostSpotImage([FromForm] Spot spot);
         Task<Hotel> PostHotelImage([FromForm] Hotel hotel);
+        Task<Package> GetLastPackage();
     }
 }

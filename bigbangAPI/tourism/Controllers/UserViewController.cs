@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using tourismBigBang.Models;
 using tourismBigBang.Models.Dto;
 using tourismBigBang.Models.View_Model;
@@ -15,6 +16,7 @@ namespace tourismBigBang.Controllers
         {
             _userViewService = userViewService;
         }
+       
         [HttpGet("GetPlans")]
         public async Task<ActionResult<List<PlanDTO>>> GetPlans()
         {
@@ -28,6 +30,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
+      
         [HttpGet("GetPackageDetails")]
         public async Task<ActionResult<List<PackagesOverall>>> GetPackageDetails(int placeId)
         {
@@ -41,6 +44,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
         [HttpGet("GetDayWise")]
         public async Task<ActionResult<List<DayWiseSchedule>>> GetDayWise(int packageId)
         {
@@ -67,6 +71,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [Authorize(Roles ="User")]
         [HttpPost("PostBooking")]
         public async Task<ActionResult<Booking>> PostBookingDetails(Booking booking)
         {
@@ -80,6 +85,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [Authorize(Roles ="Agent")]
         [HttpGet("AllPlaces")]
         public async Task<ActionResult<List<Place>>> GetAllPlaces()
         {
@@ -99,6 +105,19 @@ namespace tourismBigBang.Controllers
             try
             {
                 var get = await _userViewService.GetAllImages();
+                return Ok(get);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [HttpGet("ParticularPackage")]
+        public async Task<ActionResult<List<Package>>> GetParticularPackage(int id)
+        {
+            try
+            {
+                var get = await _userViewService.GetParticularPackage(id);
                 return Ok(get);
             }
             catch (Exception ex)

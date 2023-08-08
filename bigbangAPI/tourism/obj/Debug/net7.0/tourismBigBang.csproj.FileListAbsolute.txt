@@ -526,3 +526,12 @@ E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Microsoft.AspNetCore.JsonP
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
 E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Stripe.net.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Serilog.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Serilog.AspNetCore.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+E:\Kanini-BigBang\bigbangAPI\tourism\bin\Debug\net7.0\Serilog.Sinks.File.dll

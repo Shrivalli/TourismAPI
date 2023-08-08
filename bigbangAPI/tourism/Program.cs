@@ -14,6 +14,7 @@ using tourismBigBang.Services.UserTableService;
 using tourismBigBang.Services.TokenService;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.FileProviders;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+Log.Logger= new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).CreateLogger();
 builder.Services.AddDbContext<TourismContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("loginsetup"));

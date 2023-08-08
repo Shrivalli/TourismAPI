@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 using tourismBigBang.Global_Exception;
 using tourismBigBang.Models;
 using tourismBigBang.Repository.AdminViewRepo;
@@ -37,11 +38,13 @@ namespace tourismBigBang.Services.AdminViewService
         {
             if (gallery == null)
             {
+                Log.Error("invalid file in image gallery");
                 throw new Exception("Invalid file");
             }
             var item = await _adminViewRepo.PostImage(gallery);
             if (item == null)
             {
+                Log.Error("PostImage is null");
                 throw new Exception(CustomException.ExceptionMessages["Empty"]);
             }
             return item;
@@ -50,13 +53,10 @@ namespace tourismBigBang.Services.AdminViewService
         {
             if (place == null)
             {
+                Log.Error("PostPlaceImage is null");
                 throw new Exception("Invalid file");
             }
-            var item = await _adminViewRepo.PostPlaceImage(place);
-            if (item == null)
-            {
-                throw new Exception(CustomException.ExceptionMessages["Empty"]);
-            }
+            var item = await _adminViewRepo.PostPlaceImage(place) ?? throw new Exception(CustomException.ExceptionMessages["Empty"]);
             return item;
         }
 

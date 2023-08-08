@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using tourismBigBang.Models;
 using tourismBigBang.Services.AdminViewService;
 
@@ -13,7 +14,7 @@ namespace tourismBigBang.Controllers
         {
             _adminViewService = adminViewService;
         }
-       
+        [Authorize(Roles = "Admin")]
         [HttpPost("BeforeApproval")]
         public async Task<ActionResult<UserInfo>> BeforeApproval(UserInfo userInfo)
         {
@@ -27,6 +28,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [Authorize(Roles = "Admin")]
         [HttpGet("GetApproval")]
         public async Task<ActionResult<List<UserInfo>>> Approval()
         {
@@ -40,6 +42,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [Authorize(Roles ="Admin")]
         [HttpPut("AgentApproved")]
         public async Task<ActionResult<UserInfo>> ApprovedAgent(int id)
         {
@@ -53,6 +56,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [Authorize(Roles = "Admin")]
         [HttpDelete("AgentRejected")]
         public async Task<ActionResult<UserInfo>> RejectApproval(int id)
         {
@@ -66,6 +70,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [Authorize(Roles = "Admin")]
         [HttpPost("PostImageGallery")]
         public async Task<ActionResult<ImageGallery>> PostImage([FromForm] ImageGallery gallery)
         {
@@ -79,6 +84,7 @@ namespace tourismBigBang.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [Authorize(Roles ="Admin")]
         [HttpPost("PostPlaceWithImage")]
         public async Task<ActionResult<Place>> PostPlaceImage([FromForm] Place place)
         {

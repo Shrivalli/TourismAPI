@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 using tourismBigBang.Global_Exception;
 using tourismBigBang.Models;
 using tourismBigBang.Models.Dto;
@@ -46,6 +47,11 @@ namespace tourismBigBang.Services.UserViewService
             foreach (var plan in planDTOs)
             {
                 var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Images");
+                if (plan.Image == null)
+                {
+                    Log.Error("Image in plan is null");
+                    throw new Exception("No images in plan DTO");
+                }
                 var filePath = Path.Combine(uploadsFolder, plan.Image);
 
                 var imageBytes = await System.IO.File.ReadAllBytesAsync(filePath);
@@ -95,6 +101,11 @@ namespace tourismBigBang.Services.UserViewService
             foreach (var image in joinedData)
             {
                 var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Images");
+                if (image.Image == null)
+                {
+                    Log.Error("Image in package overall is null");
+                    throw new Exception("No images in overall package");
+                }
                 var filePath = Path.Combine(uploadsFolder, image.Image);
 
                 var imageBytes = System.IO.File.ReadAllBytes(filePath);
@@ -127,6 +138,7 @@ namespace tourismBigBang.Services.UserViewService
                 var daySchedule = daySchedules.FirstOrDefault(ds => ds.Daywise == dayNo);
                 if(daySchedule==null)
                 {
+                    Log.Error("day schedule is null");
                     throw new Exception("daySchedule is null");
                 }
                 else
@@ -155,7 +167,17 @@ namespace tourismBigBang.Services.UserViewService
             foreach (var image in dayWiseSchedules)
             {
                 var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Images");
+                if(image.SpotImage==null)
+                {
+                    Log.Error("Spot image is null");
+                    throw new Exception("No images in spot");
+                }
                 var filePath = Path.Combine(uploadsFolder, image.SpotImage);
+                if (image.HotelImage == null)
+                {
+                    Log.Error("HotelImage is null");
+                    throw new Exception("No images in hotel");
+                }
                 var filePath2=Path.Combine(uploadsFolder, image.HotelImage);
                 var imageBytes = System.IO.File.ReadAllBytes(filePath);
                 var imageBytes2 = System.IO.File.ReadAllBytes(filePath2);
@@ -182,6 +204,7 @@ namespace tourismBigBang.Services.UserViewService
             var userInfo= await _userViewRepo.GetUserDetailsForBooking(id);
             if (userInfo == null)
             {
+                Log.Error("GetUserDetailsForBooking is null");
                 throw new Exception(CustomException.ExceptionMessages["NoId"]);
             }
             return userInfo;
@@ -191,6 +214,7 @@ namespace tourismBigBang.Services.UserViewService
             var bookingDetails = await _userViewRepo.PostBooking(booking);
             if (bookingDetails == null)
             {
+                Log.Error("Post booking detail is null");
                 throw new Exception(CustomException.ExceptionMessages["Empty"]);
             }
             return bookingDetails;
@@ -202,7 +226,8 @@ namespace tourismBigBang.Services.UserViewService
           
            if(get==null)
             {
-                throw new Exception("nope");
+                Log.Error("Get all places is null");
+                throw new Exception(CustomException.ExceptionMessages["Empty"]);
             }
             return get;
         }
@@ -213,6 +238,11 @@ namespace tourismBigBang.Services.UserViewService
             foreach (var image in get)
             {
                 var uploadsFolder = Path.Combine(_hostEnvironment.WebRootPath, "Images");
+                if (image.ImageName == null)
+                {
+                    Log.Error("image is null");
+                    throw new Exception("No images in getting all images");
+                }
                 var filePath = Path.Combine(uploadsFolder, image.ImageName);
 
                 var imageBytes = System.IO.File.ReadAllBytes(filePath);
@@ -227,6 +257,16 @@ namespace tourismBigBang.Services.UserViewService
             }
             return imageList;
 
+        }
+        public async Task<Package> GetParticularPackage(int  id)
+        {
+            var get = await _userViewRepo.GetPackageById(id);
+            if (get == null)
+            {
+                Log.Error("Getting package by id is null");
+                throw new Exception(CustomException.ExceptionMessages["NoId"]);
+            }
+            return get;
         }
     }
 }

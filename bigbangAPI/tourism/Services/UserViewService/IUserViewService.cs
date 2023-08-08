@@ -14,5 +14,6 @@ namespace tourismBigBang.Services.UserViewService
         Task<Booking> PostBookingDetails(Booking booking);
         Task<List<Place>> GetAllPlaces();
         Task<List<ImageGallery>> GetAllImages();
+        Task<Package> GetParticularPackage(int id);
     }
 }
