@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\UnitTesting.csproj": {}
+    "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\UnitTesting.csproj": {}
   },
   "projects": {
-    "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj": {
+    "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj",
+        "projectUniqueName": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj",
         "projectName": "tourismBigBang",
-        "projectPath": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\obj\\",
+        "projectPath": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj",
+        "packagesPath": "C:\\Users\\Shrivalli\\.nuget\\packages\\",
+        "outputPath": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Shrivalli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -128,25 +123,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\UnitTesting.csproj": {
+    "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\UnitTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\UnitTesting.csproj",
+        "projectUniqueName": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\UnitTesting.csproj",
         "projectName": "UnitTesting",
-        "projectPath": "E:\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\UnitTesting.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "E:\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\obj\\",
+        "projectPath": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\UnitTesting.csproj",
+        "packagesPath": "C:\\Users\\Shrivalli\\.nuget\\packages\\",
+        "outputPath": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\UnitTesting\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Shrivalli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -154,15 +145,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj": {
-                "projectPath": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj"
+              "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj": {
+                "projectPath": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\tourismBigBang.csproj"
               }
             }
           }
@@ -222,7 +212,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4oY7uFkeuovv+/yJBgwaIttiC33qH7IP9hszw9TQrsM=",
+  "Hash": "B9fPTfF8ISD9PZmPRQt7QQ7p3xpHXNeTCEwSYR5tqE4=",
   "Source": "tourismBigBang",
   "BasePath": "_content/tourismBigBang",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "tourismBigBang\\wwwroot",
       "Source": "tourismBigBang",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar230643775.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar230643775.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Amritsar230643775.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Amritsar230643775.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar231552172.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar231552172.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Amritsar231552172.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Amritsar231552172.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar231817624.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar231817624.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Amritsar231817624.jpg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Amritsar231817624.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar233208389.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar233208389.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Amritsar233208389.jpg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Amritsar233208389.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar235106806.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar235106806.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Amritsar235106806.jpg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Amritsar235106806.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar235148076.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar235148076.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Amritsar235148076.jpg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Amritsar235148076.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar235631625.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Amritsar235631625.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Amritsar235631625.jpg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Amritsar235631625.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Darjeeling234148026.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Darjeeling234148026.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Darjeeling234148026.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Darjeeling234148026.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Darjeeling235724157.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Darjeeling235724157.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Darjeeling235724157.jpg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Darjeeling235724157.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka230657005.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka230657005.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka230657005.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka230657005.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka230857818.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka230857818.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka230857818.jpg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka230857818.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka231418848.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka231418848.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka231418848.jpg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka231418848.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka232216797.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka232216797.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka232216797.jpg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka232216797.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka232302419.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka232302419.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka232302419.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka232302419.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka233018080.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka233018080.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka233018080.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka233018080.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka233227920.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka233227920.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka233227920.jpg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka233227920.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka234236620.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka234236620.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka234236620.jpg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka234236620.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka234350740.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka234350740.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka234350740.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka234350740.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka234703238.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka234703238.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka234703238.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka234703238.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka234838768.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\DelhiPacka234838768.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/DelhiPacka234838768.jpg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\DelhiPacka234838768.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Gateway-of235913227.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Gateway-of235913227.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Gateway-of235913227.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Gateway-of235913227.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Goa230042188.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Goa230042188.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Goa230042188.jpg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Goa230042188.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Goa232242753.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Goa232242753.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Goa232242753.jpg",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Goa232242753.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\grand231527566.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\grand231527566.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/grand231527566.jpg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\grand231527566.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\grand231555861.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\grand231555861.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/grand231555861.jpg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\grand231555861.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\grand234237838.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\grand234237838.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/grand234237838.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\grand234237838.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\HawaMahal230319426.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\HawaMahal230319426.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/HawaMahal230319426.jpg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\HawaMahal230319426.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Humayuns230824181.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Humayuns230824181.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Humayuns230824181.jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Humayuns230824181.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Humayuns232613303.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Humayuns232613303.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Humayuns232613303.jpg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Humayuns232613303.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Humayuns234542522.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Humayuns234542522.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Humayuns234542522.jpg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Humayuns234542522.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\indiaGate230731433.jpeg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\indiaGate230731433.jpeg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/indiaGate230731433.jpeg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\indiaGate230731433.jpeg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Jaipur232737333.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Jaipur232737333.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Jaipur232737333.jpg",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Jaipur232737333.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Jaipur235750024.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Jaipur235750024.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Jaipur235750024.jpg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Jaipur235750024.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Kerala233141954.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Kerala233141954.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Kerala233141954.jpg",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Kerala233141954.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Kerala235953558.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Kerala235953558.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Kerala235953558.jpg",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Kerala235953558.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\munnar233603148.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\munnar233603148.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/munnar233603148.jpg",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\munnar233603148.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\packageDel231538648.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\packageDel231538648.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/packageDel231538648.jpg",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\packageDel231538648.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\packageDel232219345.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\packageDel232219345.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/packageDel232219345.jpg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\packageDel232219345.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\packageDel233248339.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\packageDel233248339.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/packageDel233248339.jpg",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\packageDel233248339.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\packageDel233553966.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\packageDel233553966.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/packageDel233553966.jpg",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\packageDel233553966.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer230314769.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer230314769.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer230314769.jpg",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer230314769.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer230527708.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer230527708.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer230527708.jpg",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer230527708.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer230732073.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer230732073.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer230732073.jpg",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer230732073.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231258295.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231258295.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer231258295.jpg",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer231258295.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231727478.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231727478.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer231727478.jpg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer231727478.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231804342.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231804342.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer231804342.jpg",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer231804342.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231953339.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231953339.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer231953339.jpg",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer231953339.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231953764.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231953764.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer231953764.jpg",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer231953764.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231953846.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer231953846.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer231953846.jpg",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer231953846.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer232206154.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer232206154.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer232206154.jpg",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer232206154.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer232256982.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer232256982.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer232256982.jpg",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer232256982.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer232536996.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer232536996.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer232536996.jpg",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer232536996.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer233240276.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\PackageKer233240276.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/PackageKer233240276.jpg",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\PackageKer233240276.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Qutub230624370.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Qutub230624370.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Qutub230624370.jpg",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Qutub230624370.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Rajasthan230020097.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Rajasthan230020097.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Rajasthan230020097.jpg",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Rajasthan230020097.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\redFort230131325.jpeg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\redFort230131325.jpeg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/redFort230131325.jpeg",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\redFort230131325.jpeg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\redFort230455016.jpeg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\redFort230455016.jpeg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/redFort230455016.jpeg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\redFort230455016.jpeg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong230008235.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong230008235.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Shillong230008235.jpg",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Shillong230008235.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong231412232.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong231412232.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Shillong231412232.jpg",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Shillong231412232.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong234002915.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong234002915.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Shillong234002915.jpg",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Shillong234002915.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong235722130.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong235722130.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Shillong235722130.jpg",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Shillong235722130.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong235825963.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong235825963.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Shillong235825963.jpg",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Shillong235825963.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong235830760.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shillong235830760.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Shillong235830760.jpg",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Shillong235830760.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shimla235929093.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Shimla235929093.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Shimla235929093.jpg",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Shimla235929093.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal234623748.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal234623748.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/tajmahal234623748.jpg",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\tajmahal234623748.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal235133744.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal235133744.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/tajmahal235133744.jpg",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\tajmahal235133744.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal235213471.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal235213471.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/tajmahal235213471.jpg",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\tajmahal235213471.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal235257821.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal235257821.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/tajmahal235257821.jpg",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\tajmahal235257821.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal235403035.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\tajmahal235403035.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/tajmahal235403035.jpg",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\tajmahal235403035.jpg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Visaya231618493.jpeg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Visaya231618493.jpeg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Visaya231618493.jpeg",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Visaya231618493.jpeg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Visaya231624722.jpeg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\Visaya231624722.jpeg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/Visaya231624722.jpeg",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\Visaya231624722.jpeg"
     },
     {
-      "Identity": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\westBengal230303511.jpg",
+      "Identity": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\Images\\westBengal230303511.jpg",
       "SourceId": "tourismBigBang",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
+      "ContentRoot": "E:\\Kanini\\projects\\Kanini-BigBang\\bigbangAPI\\tourism\\wwwroot\\",
       "BasePath": "_content/tourismBigBang",
       "RelativePath": "Images/westBengal230303511.jpg",
       "AssetKind": "All",
